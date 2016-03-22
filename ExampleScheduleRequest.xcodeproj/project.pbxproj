@@ -13,6 +13,13 @@
 		2C62E6081CA151EB004F44BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C62E6061CA151EB004F44BA /* Main.storyboard */; };
 		2C62E60A1CA151EB004F44BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C62E6091CA151EB004F44BA /* Assets.xcassets */; };
 		2C62E60D1CA151EB004F44BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C62E60B1CA151EB004F44BA /* LaunchScreen.storyboard */; };
+		2C62E6241CA156B6004F44BA /* NFISimplePersist.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C62E61F1CA156B6004F44BA /* NFISimplePersist.m */; };
+		2C62E6251CA156B6004F44BA /* NFIEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C62E6231CA156B6004F44BA /* NFIEncode.m */; };
+		2C62E6291CA156E1004F44BA /* NFIScheduleRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C62E6281CA156E1004F44BA /* NFIScheduleRequest.m */; };
+		2C62E62C1CA1570E004F44BA /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C62E62B1CA1570E004F44BA /* Reachability.m */; };
+		2C62E6301CA15771004F44BA /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C62E62F1CA15771004F44BA /* User.m */; };
+		2C62E6341CA15787004F44BA /* AppServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C62E6331CA15787004F44BA /* AppServices.m */; };
+		2C62E6361CA15C50004F44BA /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C62E6351CA15C50004F44BA /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,20 @@
 		2C62E6091CA151EB004F44BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C62E60C1CA151EB004F44BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C62E60E1CA151EB004F44BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C62E61E1CA156B6004F44BA /* NFISimplePersist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFISimplePersist.h; sourceTree = "<group>"; };
+		2C62E61F1CA156B6004F44BA /* NFISimplePersist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFISimplePersist.m; sourceTree = "<group>"; };
+		2C62E6201CA156B6004F44BA /* NFISimplePersistObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFISimplePersistObject.h; sourceTree = "<group>"; };
+		2C62E6221CA156B6004F44BA /* NFIEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFIEncode.h; sourceTree = "<group>"; };
+		2C62E6231CA156B6004F44BA /* NFIEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFIEncode.m; sourceTree = "<group>"; };
+		2C62E6271CA156E1004F44BA /* NFIScheduleRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFIScheduleRequest.h; sourceTree = "<group>"; };
+		2C62E6281CA156E1004F44BA /* NFIScheduleRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFIScheduleRequest.m; sourceTree = "<group>"; };
+		2C62E62A1CA1570E004F44BA /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		2C62E62B1CA1570E004F44BA /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		2C62E62E1CA15771004F44BA /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		2C62E62F1CA15771004F44BA /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		2C62E6321CA15787004F44BA /* AppServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppServices.h; sourceTree = "<group>"; };
+		2C62E6331CA15787004F44BA /* AppServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppServices.m; sourceTree = "<group>"; };
+		2C62E6351CA15C50004F44BA /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C62E6361CA15C50004F44BA /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +64,7 @@
 		2C62E5F11CA151EB004F44BA = {
 			isa = PBXGroup;
 			children = (
+				2C62E6351CA15C50004F44BA /* libsqlite3.tbd */,
 				2C62E5FC1CA151EB004F44BA /* ExampleScheduleRequest */,
 				2C62E5FB1CA151EB004F44BA /* Products */,
 			);
@@ -58,25 +81,134 @@
 		2C62E5FC1CA151EB004F44BA /* ExampleScheduleRequest */ = {
 			isa = PBXGroup;
 			children = (
-				2C62E6001CA151EB004F44BA /* AppDelegate.h */,
-				2C62E6011CA151EB004F44BA /* AppDelegate.m */,
-				2C62E6031CA151EB004F44BA /* ViewController.h */,
-				2C62E6041CA151EB004F44BA /* ViewController.m */,
-				2C62E6061CA151EB004F44BA /* Main.storyboard */,
-				2C62E6091CA151EB004F44BA /* Assets.xcassets */,
-				2C62E60B1CA151EB004F44BA /* LaunchScreen.storyboard */,
-				2C62E60E1CA151EB004F44BA /* Info.plist */,
-				2C62E5FD1CA151EB004F44BA /* Supporting Files */,
+				2C62E6171CA1560D004F44BA /* Artworks */,
+				2C62E6161CA15608004F44BA /* Interface */,
+				2C62E6151CA15603004F44BA /* Source */,
+				2C62E6141CA155F9004F44BA /* Resources */,
 			);
 			path = ExampleScheduleRequest;
 			sourceTree = "<group>";
 		};
-		2C62E5FD1CA151EB004F44BA /* Supporting Files */ = {
+		2C62E6141CA155F9004F44BA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2C62E60E1CA151EB004F44BA /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2C62E6151CA15603004F44BA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2C62E6311CA15775004F44BA /* Services */,
+				2C62E62D1CA15743004F44BA /* Model */,
+				2C62E6191CA1561A004F44BA /* Main & AppDelegate */,
+				2C62E61B1CA1562C004F44BA /* View Controllers */,
+				2C62E61A1CA15623004F44BA /* Commons */,
+				2C62E61C1CA15633004F44BA /* Libraries */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		2C62E6161CA15608004F44BA /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				2C62E6061CA151EB004F44BA /* Main.storyboard */,
+				2C62E60B1CA151EB004F44BA /* LaunchScreen.storyboard */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		2C62E6171CA1560D004F44BA /* Artworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C62E6091CA151EB004F44BA /* Assets.xcassets */,
+			);
+			name = Artworks;
+			sourceTree = "<group>";
+		};
+		2C62E6191CA1561A004F44BA /* Main & AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				2C62E6001CA151EB004F44BA /* AppDelegate.h */,
+				2C62E6011CA151EB004F44BA /* AppDelegate.m */,
 				2C62E5FE1CA151EB004F44BA /* main.m */,
 			);
-			name = "Supporting Files";
+			name = "Main & AppDelegate";
+			sourceTree = "<group>";
+		};
+		2C62E61A1CA15623004F44BA /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				2C62E6211CA156B6004F44BA /* Utilities */,
+			);
+			name = Commons;
+			sourceTree = "<group>";
+		};
+		2C62E61B1CA1562C004F44BA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2C62E6031CA151EB004F44BA /* ViewController.h */,
+				2C62E6041CA151EB004F44BA /* ViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2C62E61C1CA15633004F44BA /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				2C62E6261CA156E1004F44BA /* Schedule Request */,
+				2C62E61D1CA156B6004F44BA /* SimplePersist */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		2C62E61D1CA156B6004F44BA /* SimplePersist */ = {
+			isa = PBXGroup;
+			children = (
+				2C62E61E1CA156B6004F44BA /* NFISimplePersist.h */,
+				2C62E61F1CA156B6004F44BA /* NFISimplePersist.m */,
+				2C62E6201CA156B6004F44BA /* NFISimplePersistObject.h */,
+			);
+			path = SimplePersist;
+			sourceTree = "<group>";
+		};
+		2C62E6211CA156B6004F44BA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2C62E62A1CA1570E004F44BA /* Reachability.h */,
+				2C62E62B1CA1570E004F44BA /* Reachability.m */,
+				2C62E6221CA156B6004F44BA /* NFIEncode.h */,
+				2C62E6231CA156B6004F44BA /* NFIEncode.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2C62E6261CA156E1004F44BA /* Schedule Request */ = {
+			isa = PBXGroup;
+			children = (
+				2C62E6271CA156E1004F44BA /* NFIScheduleRequest.h */,
+				2C62E6281CA156E1004F44BA /* NFIScheduleRequest.m */,
+			);
+			path = "Schedule Request";
+			sourceTree = "<group>";
+		};
+		2C62E62D1CA15743004F44BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C62E62E1CA15771004F44BA /* User.h */,
+				2C62E62F1CA15771004F44BA /* User.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2C62E6311CA15775004F44BA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2C62E6321CA15787004F44BA /* AppServices.h */,
+				2C62E6331CA15787004F44BA /* AppServices.m */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +281,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C62E6341CA15787004F44BA /* AppServices.m in Sources */,
+				2C62E6301CA15771004F44BA /* User.m in Sources */,
 				2C62E6051CA151EB004F44BA /* ViewController.m in Sources */,
+				2C62E6251CA156B6004F44BA /* NFIEncode.m in Sources */,
 				2C62E6021CA151EB004F44BA /* AppDelegate.m in Sources */,
+				2C62E62C1CA1570E004F44BA /* Reachability.m in Sources */,
+				2C62E6241CA156B6004F44BA /* NFISimplePersist.m in Sources */,
+				2C62E6291CA156E1004F44BA /* NFIScheduleRequest.m in Sources */,
 				2C62E5FF1CA151EB004F44BA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
