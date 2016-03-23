@@ -95,7 +95,7 @@ Now, add the classes that implements the upload of every model that you wants:
 [scheduleRequest registerRepository:[AppServices class] forClass:[User class]];
 ```
 
-<strong>NOTE: It's important that your repository class implements a static method with format : + (void)uploadModelClass:(ModelClass *)object.</strong> 
+<strong>NOTE: It's important that your repository class implements a static method with format : + (void)performModelClassRequest:(ModelClass *)object.</strong> 
 
 For example:
 
@@ -108,7 +108,7 @@ For example:
 
 #pragma mark - User Services
 
-+ (void)uploadUser:(User *)user;
++ (void)performUserRequest:(User *)user;
 
 @end
 ```
@@ -120,7 +120,7 @@ Then, in the implementation of this method:
 
 #pragma mark - User Services
 
-+ (void)uploadUser:(User *)user {
++ (void) performUserRequest:(User *)user {
     //Implements here the user upload to server
     NSLog(@"Uploading user... %ld",user.identifier);
     //Notify NFIScheduleRequest that the object was uploaded correctly
