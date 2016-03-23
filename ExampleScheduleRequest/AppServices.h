@@ -14,6 +14,6 @@
 
 #pragma mark - User Services
 
-+ (void)uploadUser:(User *)user;
++ (void)performUserRequest:(User *)user;
 
 @end

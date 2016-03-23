@@ -258,14 +258,14 @@ typedef NS_ENUM (NSInteger, NFIScheduleRequestStatus) {
         NSString *oClass = NSStringFromClass([object class]);
         if ([objectClass isEqualToString:oClass]) {
             Class class = NSClassFromString([_repositoryManager objectForKey:objectClass]);
-            SEL selector = sel_registerName([[NSString stringWithFormat:@"upload%@:",objectClass] UTF8String]);
+            SEL selector = sel_registerName([[NSString stringWithFormat:@"perform%@Request:",objectClass] UTF8String]);
             @try {
                 [class performSelector:selector
                             withObject:object
                             afterDelay:1.0];
             } @catch (NSException *exception) {
                 @throw [NSException exceptionWithName:NSInternalInconsistencyException
-                                               reason:[NSString stringWithFormat:@"To schedule request of this object, you must define a method with format + (void)uploadClass:(Class)object"]
+                                               reason:[NSString stringWithFormat:@"To schedule request of this object, you must define a method with format + (void)performClassRequest:(Class)object"]
                                              userInfo:nil];
             }
         }
