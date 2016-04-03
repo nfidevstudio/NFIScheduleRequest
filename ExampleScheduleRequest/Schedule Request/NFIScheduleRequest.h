@@ -61,9 +61,9 @@ extern NSString * const kPrefix;
 - (void)scheduleRequestOfObject:(id)object;
 
 /**
- *  Call this method to try to upload the objects persisted manually.
+ *  Call this method to try to perform the request of objects persisted.
  */
-- (void)tryToUploadNow;
+- (void)tryToPerformRequestNow;
 
 /**
  *  Return an array with all the elements in the qeuE
@@ -71,13 +71,8 @@ extern NSString * const kPrefix;
 - (NSArray *)queueRequests;
 
 /**
- * Notifiy to ScheludeRequest Manager that the object was uploaded correctly
+ * Notifiy to ScheludeRequest Manager that the request was performed successfully
  */
-- (void)objectUploaded:(id)object;
-
-/**
- * Notifiy to ScheludeRequest Manager that the object was not uploaded correctly
- */
-- (void)objectWasNotUploaded:(id)object;
+- (void)requestOfObject:(id)object performedSuccess:(BOOL)success;
 
 @end

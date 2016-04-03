@@ -18,7 +18,7 @@
     //Implements here the user upload to server
     NSLog(@"Uploading user... %ld",user.identifier);
     //Notify NFIScheduleRequest that the object was uploaded correctly
-    [[NFIScheduleRequest sharedInstance] objectUploaded:user];
+    [[NFIScheduleRequest sharedInstance] requestOfObject:user performedSuccess:YES];
 }
 
 @end

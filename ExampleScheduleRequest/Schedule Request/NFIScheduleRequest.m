@@ -193,31 +193,28 @@ typedef NS_ENUM (NSInteger, NFIScheduleRequestStatus) {
 /**
  *  Call this method to try to upload the objects persisted manually.
  */
-- (void)tryToUploadNow {
+- (void)tryToPerformRequestNow {
     [self beginEngine];
 }
 
-/**
- * Notifiy to ScheludeRequest Manager that the object was uploaded correctly
- */
-- (void)objectUploaded:(id)object {
-    [self removeObject:object];
-    [self pauseEngine];
-    if ([self queueRequests].count > 0) {
-        [self beginEngine];
-    }
-}
 
 /**
- * Notifiy to ScheludeRequest Manager that the object was not uploaded correctly
+ * Notifiy to ScheludeRequest Manager that the request was performed successfully
  */
-- (void)objectWasNotUploaded:(id)object {
-    [self pauseEngine];
-    if ([self queueRequests].count > 0) {
-        [self beginEngine];
+- (void)requestOfObject:(id)object performedSuccess:(BOOL)success {
+    if (success) {
+        [self removeObject:object];
+        [self pauseEngine];
+        if ([self queueRequests].count > 0) {
+            [self beginEngine];
+        }
+    } else {
+        [self pauseEngine];
+        if ([self queueRequests].count > 0) {
+            [self beginEngine];
+        }
     }
 }
-
 #pragma mark - Private methods
 
 - (BOOL)isReachable {
